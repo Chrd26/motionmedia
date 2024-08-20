@@ -20,22 +20,22 @@ indent_mode=2
 [project]
 name=motionmedia
 base_path=/Users/chrisd/Desktop/motionmedia
+description=
 
 [long line marker]
 long_line_behaviour=1
 long_line_column=100
 
 [files]
-current_page=2
-FILE_NAME_0=70;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fmain.cpp;0;4
-FILE_NAME_1=492;CMake;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2FCMakeLists.txt;0;4
-FILE_NAME_2=16;None;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fbuild%2F.gitkeep;0;4
+current_page=0
+FILE_NAME_0=107;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fmain.cpp;0;4
+FILE_NAME_1=992;CMake;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2FCMakeLists.txt;0;4
 
 [VTE]
 last_dir=/Users/chrisd
 
 [prjorg]
-expanded_paths=/Users/chrisd/Desktop/motionmedia;
+expanded_paths=/Users/chrisd/Desktop/motionmedia/build;/Users/chrisd/Desktop/motionmedia/modules;/Users/chrisd/Desktop/motionmedia/src;
 source_patterns=*.c;*.C;*.cpp;*.cxx;*.c++;*.cc;*.m;
 header_patterns=*.h;*.H;*.hpp;*.hxx;*.h++;*.hh;
 ignored_dirs_patterns=.*;CVS;
