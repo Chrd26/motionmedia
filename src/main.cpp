@@ -1,8 +1,9 @@
-#include <iostream>
-#include <opencv2/opencv.hpp>
+#include "capture.h"
 
 int main()
 {
-	std::cout << "Hello!" << std::endl;
+	Capture cap(0, cv::CAP_ANY);
+	cap.Start();
+	
 	return 0;
 }
