@@ -1,5 +1,7 @@
+#pragma once
 #include <iostream>
 #include <thread>
+#include <vector>
 #include <opencv2/opencv.hpp>
 #include <opencv2/videoio.hpp>
 

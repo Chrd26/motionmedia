@@ -24,13 +24,19 @@ void Capture::Start()
 		
 		capture.read(frame);
 		
+		cv::Mat grayscaledImage;
+		cv::cvtColor(frame, grayscaledImage, cv::COLOR_BGR2GRAY);
+		
+		cv::circle(grayscaledImage, cv::Point(640, 360), 100, cv::Scalar(255, 0, 0), 5);
+		
+		
 		if (frame.empty())
 		{
 			std::cout << "Getting empty frames!" << std::endl;
 			break;
 		}
 		
-		cv::imshow("live", frame);
+		cv::imshow("Camera", grayscaledImage);
 		
 		if(cv::waitKey(1) == 27)
 		{
