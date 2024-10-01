@@ -4,23 +4,22 @@
 
 int main(int argc, char** argv)
 {
-	/*
-	if (argc > 2)
+	std::cout << argc << std::endl;
+	if (argc > 2 || argc == 1)
 	{
-		std::cout << "Too many arguments!" << std::endl;
+		std::cout << "Wrong amount of arguments!" << std::endl;
 		return -1;
 	}
 	
-	std::vector<std::string> videoPaths;
+	std::string videoPath = argv[1];
 	
-	for (int i = 0; i < argc - 1; i++)
-	{
-		videoPaths.push_back = argv[i];
-	}
-	*/
+	std::cout << videoPath << std::endl;
+	
+	/*
 	
 	Capture cap(0, cv::CAP_ANY);
 	cap.Start();
+	*/
 	
 	return 0;
 }

@@ -2,6 +2,7 @@
 #include <iostream>
 #include <thread>
 #include <vector>
+#include "videoplayer.h"
 #include <opencv2/opencv.hpp>
 #include <opencv2/videoio.hpp>
 
@@ -12,6 +13,7 @@ private:
 	cv::VideoCapture capture;
 	bool hasInitialisedSuccessfully;
 	int getCameraID, getAPIID;
+	//VideoPlayer videoplayer;
 	
 public:
 	Capture(int deviceID, int apiID);

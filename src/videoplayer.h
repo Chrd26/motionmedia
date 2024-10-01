@@ -7,6 +7,6 @@ class VideoPlayer{
 	static std::vector<std::string> videoFiles;
 	
 public:
-	VideoPlayer(int videoAmount, std::vector<std::string> filePaths);
-	~VideoPlayer()
+	VideoPlayer(std::string pathToVideo);
+	~VideoPlayer();
 };
