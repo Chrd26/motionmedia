@@ -1,12 +1,22 @@
 #pragma once
 #include <iostream>
 #include <vector>
-#include <opencv2/core.hpp>
+#include <opencv2/opencv.hpp>
+#include <opencv2/videoio.hpp>
+#include <thread>
 
 class VideoPlayer{
-	static std::vector<std::string> videoFiles;
 	
+private:
+	static cv::Mat videoFrame;
+	static cv::VideoCapture videoSource;
+	
+
 public:
 	VideoPlayer(std::string pathToVideo);
 	~VideoPlayer();
+	
+private:
+	static void PlayVideo();
+	
 };

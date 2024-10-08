@@ -27,15 +27,13 @@ long_line_behaviour=1
 long_line_column=100
 
 [files]
-current_page=0
-FILE_NAME_0=319;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fmain.cpp;0;4
-FILE_NAME_1=289;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fcapture.h;0;4
-FILE_NAME_2=264;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fcapture.cpp;0;4
-FILE_NAME_3=114;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fdetector.h;0;4
-FILE_NAME_4=1;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fdetector.cpp;0;4
-FILE_NAME_5=209;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fvideoplayer.h;0;4
-FILE_NAME_6=24;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fvideoplayer.cpp;0;4
-FILE_NAME_7=36;CMake;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2FCMakeLists.txt;0;4
+current_page=1
+FILE_NAME_0=334;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fmain.cpp;0;4
+FILE_NAME_1=12;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fcapture.h;0;4
+FILE_NAME_2=224;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fcapture.cpp;0;4
+FILE_NAME_3=226;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fvideoplayer.h;0;4
+FILE_NAME_4=367;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fvideoplayer.cpp;0;4
+FILE_NAME_5=36;CMake;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2FCMakeLists.txt;0;4
 
 [VTE]
 last_dir=/Users/chrisd
