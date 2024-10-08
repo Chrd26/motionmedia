@@ -34,4 +34,4 @@
 build/*
 !build/.gitkeep
 Icon?
-
+media/
