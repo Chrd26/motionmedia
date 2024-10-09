@@ -7,7 +7,7 @@
 
 class VideoPlayer{
 	
-private:
+public:
 	static cv::Mat videoFrame;
 	static cv::VideoCapture videoSource;
 	

@@ -13,15 +13,6 @@ VideoPlayer::VideoPlayer(std::string pathToVideo)
 		std::cout << "Failed to open file" << std::endl;
 		exit(-1);
 	}
-	
-	PlayVideo();
-	
-	//std::thread t1(PlayVideo);
-	
-	//if (t1.joinable())
-	//{
-	//	t1.detach();
-	//}	
 }
 
 void VideoPlayer::PlayVideo()

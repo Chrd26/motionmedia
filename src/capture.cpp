@@ -11,8 +11,6 @@ Capture::Capture(int deviceID, int apiID, std::string pathToVideo):videoplayer(p
 		std::cout << "Failed to open camera" << std::endl;
 		hasInitialisedSuccessfully = false;
 	}
-	
-	
 }
 
 
@@ -34,6 +32,17 @@ void Capture::Start()
 		}
 		
 		cv::imshow("Camera", frame);
+		
+		// If person found, show video 
+		// start video if there are no detections
+		videoplayer.videoSource.read(videoplayer.videoFrame);
+		
+		if (videoplayer.videoFrame.empty())
+		{
+			std::cout << "Getting empty frames" << std::endl;
+		}
+		
+		cv::imshow("Video", videoplayer.videoFrame);
 		
 		if(cv::waitKey(1) == 27)
 		{
