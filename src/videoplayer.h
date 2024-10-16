@@ -1,9 +1,5 @@
 #pragma once
-#include <iostream>
-#include <vector>
-#include <opencv2/opencv.hpp>
-#include <opencv2/videoio.hpp>
-#include <thread>
+#include "detector.h"
 
 class VideoPlayer{
 	

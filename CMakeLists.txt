@@ -18,7 +18,9 @@ find_package(OpenCV REQUIRED)
 # Build
 add_executable(	${PROJECT_NAME} ./src/main.cpp
 				./src/capture.h ./src/capture.cpp
-				./src/videoplayer.h ./src/videoplayer.cpp)
+				./src/videoplayer.h ./src/videoplayer.cpp 
+				./src/detector.h ./src/detector.cpp
+				./src/detectionresults.h)
 
 # Add opencv to linker this is for the homebrew version. I have been unable to 
 # use it as a submodule due to a weird error with the libjpeg-turbo.

@@ -4,8 +4,8 @@
 
 int main(int argc, char** argv)
 {
-	std::cout << argc << std::endl;
-	if (argc > 2 || argc == 1)
+	
+	if (argc > 2 || argc < 2)
 	{
 		std::cout << "Wrong number of arguments!" << std::endl;
 		return -1;
@@ -15,7 +15,6 @@ int main(int argc, char** argv)
 	
 	Capture cap(0, cv::CAP_ANY, videoPath);
 	cap.Start();
-	
 	
 	return 0;
 }

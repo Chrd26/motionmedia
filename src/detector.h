@@ -1,9 +1,16 @@
 #pragma once
-#include <iostream>
-#include <opencv2/objdetect.hpp>
-#include <opencv2/core.hpp> 
+#include "detectionresults.h"
 
 class Detector
 {
+public:
+	Detector(std::string pathToClassifier);
+	~Detector();
+	
+public:
+	static DetectorResults ReturnDetectionInformation(cv::Mat frame);
+	
+private:
+	static cv::CascadeClassifier visionClassifier;
 	
 };
