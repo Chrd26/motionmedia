@@ -27,21 +27,22 @@ long_line_behaviour=1
 long_line_column=100
 
 [files]
-current_page=5
-FILE_NAME_0=314;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fmain.cpp;0;4
-FILE_NAME_1=63;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fcapture.h;0;4
-FILE_NAME_2=572;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fcapture.cpp;0;4
-FILE_NAME_3=12;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fvideoplayer.h;0;4
-FILE_NAME_4=220;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fdetector.h;0;4
-FILE_NAME_5=424;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fdetector.cpp;0;4
-FILE_NAME_6=277;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fdetectionresults.h;0;4
-FILE_NAME_7=947;CMake;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2FCMakeLists.txt;0;4
+current_page=8
+FILE_NAME_0=916;CMake;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2FCMakeLists.txt;0;4
+FILE_NAME_1=253;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fcapture.h;0;4
+FILE_NAME_2=1671;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fcapture.cpp;0;4
+FILE_NAME_3=159;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fvideoplayer.h;0;4
+FILE_NAME_4=323;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fvideoplayer.cpp;0;4
+FILE_NAME_5=12;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fdetector.h;0;4
+FILE_NAME_6=453;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fdetector.cpp;0;4
+FILE_NAME_7=320;C++;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2Fsrc%2Fmain.cpp;0;4
+FILE_NAME_8=317;None;0;EUTF-8;1;1;0;%2FUsers%2Fchrisd%2FDesktop%2Fmotionmedia%2F.gitignore;0;4
 
 [VTE]
 last_dir=/Users/chrisd
 
 [prjorg]
-expanded_paths=/Users/chrisd/Desktop/motionmedia/src;
+expanded_paths=/Users/chrisd/Desktop/motionmedia/Cascade Classifier;/Users/chrisd/Desktop/motionmedia/src;
 source_patterns=*.c;*.C;*.cpp;*.cxx;*.c++;*.cc;*.m;
 header_patterns=*.h;*.H;*.hpp;*.hxx;*.h++;*.hh;
 ignored_dirs_patterns=.*;CVS;

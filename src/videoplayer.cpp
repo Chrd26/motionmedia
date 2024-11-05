@@ -2,11 +2,18 @@
 
 cv::Mat VideoPlayer::videoFrame;
 cv::VideoCapture VideoPlayer::videoSource;
+cv::Mat VideoPlayer::emptyPicture;
 
-VideoPlayer::VideoPlayer(std::string pathToVideo)
+VideoPlayer::VideoPlayer(std::string pathToVideo, std::string pathToBackgroundPicture)
 {
-	std::cout << "Path: " << pathToVideo << std::endl;
 	videoSource = cv::VideoCapture(pathToVideo);
+	emptyPicture = cv::imread(pathToBackgroundPicture);
+	
+	if (emptyPicture.empty())
+	{
+		std::cout << "Failed to open picture" << std::endl;
+		exit(-1);
+	}
 	
 	if (!videoSource.isOpened())
 	{

@@ -9,9 +9,12 @@ private:
 	bool hasInitialisedSuccessfully;
 	int getCameraID, getAPIID;
 	VideoPlayer videoplayer;
+	Detector detector;
+	float alpha, beta;
+	bool isIncreasing;
 	
 public:
-	Capture(int deviceID, int apiID, std::string pathToVideo);
+	Capture(int deviceID, int apiID, std::string pathToVideo, std::string pathToBackground);
 	~Capture();
 	static void CaptureOperation(int cameraID, int apiID);
 	void Start();

@@ -12,8 +12,9 @@ int main(int argc, char** argv)
 	}
 	
 	std::string videoPath = argv[1];
+	std::string backgroundPath = "../media/black-background.jpg";
 	
-	Capture cap(0, cv::CAP_ANY, videoPath);
+	Capture cap(0, cv::CAP_ANY, videoPath, backgroundPath);
 	cap.Start();
 	
 	return 0;

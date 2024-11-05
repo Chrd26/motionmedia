@@ -1,25 +1,22 @@
 #include "detector.h"
-Detector::visionClassifier;
+cv::CascadeClassifier Detector::visionClassifier;
 
 Detector::Detector(std::string pathToClassifier)
 {
 	visionClassifier.load(pathToClassifier);
 	
-	if (cascadeClassifier.empty())
+	if (visionClassifier.empty())
 	{
 		std::cout << "Haar cascade classifier was not loaded" << std::endl;
 		exit(-1);
 	}
-	
-	
 }
 
-
-Detector::ReturnDetectionInformation(cv::Mat frame)
+std::vector<cv::Rect> Detector::ReturnDetectionInformation(cv::Mat frame)
 {
-	DetectorResults results;
+	std::vector<cv::Rect> faces;
 	
-	visionClassifier.detectMultiscale(frame, results.faces, 1.1, 10);
+	visionClassifier.detectMultiScale(frame, faces, 1.1, 9);
 	
-	return results;
+	return faces;
 }
