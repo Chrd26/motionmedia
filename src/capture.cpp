@@ -2,11 +2,10 @@
 
 Capture::Capture(	int deviceID, int apiID, std::string pathToVideo, 
 					std::string pathToBackground):videoplayer(pathToVideo, pathToBackground), 
-					detector("../Cascade Classifier/haarcascade_upperbody.xml")
+					detector("../Cascade Classifier/haarcascade_frontalface_default.xml")
 {	
 	capture.open(deviceID, apiID);
 	hasInitialisedSuccessfully = true;
-	isIncreasing = true;
 	alpha = 1;
 	
 	if (!capture.isOpened())
@@ -39,12 +38,9 @@ void Capture::Start()
 		videoplayer.videoSource.read(videoplayer.videoFrame);
 		std::vector<cv::Rect> faces = detector.ReturnDetectionInformation(frame);
 	
-		//std::cout << "Faces: " << faces.size() << std::endl;
-		// Create a purple rectangle  the face.
+		// Create a purple rectangle
 		for (int i = 0; i < faces.size(); i++)
 		{
-			std::cout << "Top Left: " << faces[0].tl() << std::endl;
-			std::cout << "Bottom Right: " << faces[i].br() << std::endl;
 			cv::rectangle(frame, faces[i].tl(), faces[i].br(), cv::Scalar(255, 0, 255), 5);
 		}
 		
@@ -53,38 +49,38 @@ void Capture::Start()
 			std::cout << "Getting empty frames" << std::endl;
 		}
 		
-		cv::imshow("Camera", frame);
-		cv::imshow("Video", videoplayer.videoFrame);
+		//cv::imshow("Camera", frame);
+		//cv::imshow("Video", videoplayer.videoFrame);
 		
-		if (beta > 1 || beta < 0)
+		if (faces.empty())
 		{
-			if (!isIncreasing)
-			{
-				alpha = 1.0;
-			}
-			
-			isIncreasing = !isIncreasing;
-		}
-		
-		if (isIncreasing)
-		{
-			beta += 0.05;
-			alpha -= 0.05;
+			noDetection = true;
 		}else
 		{
-			beta -= 0.05;
-			alpha += 0.05;
+			noDetection = false;
 		}
 		
-		std::cout << "Beta: " << beta << std::endl;
-		std::cout << "Alpha: " << alpha << std::endl;
+		if (noDetection && alpha > 0)
+		{
+			beta += 0.1;
+			alpha -= 0.1;
+		}
+		
+		if (!noDetection && alpha < 1)
+		{
+			beta -= 0.5;
+			alpha += 0.5;
+		}
+		
 		
 		cv::Mat dest;
 		
 		cv::addWeighted(videoplayer.videoFrame, alpha, cv::Scalar(0, 0, 0), beta, 0.0, dest);
-		cv::imshow("Blended Image", dest);
+		cv::namedWindow("Result", cv::WINDOW_NORMAL);
+		cv::imshow("Result", dest);
+		cv::setWindowProperty("Result", cv::WND_PROP_FULLSCREEN, cv::WINDOW_FULLSCREEN);
 		
-		if(cv::waitKey(1) == 27)
+		if(cv::waitKey(50) == 27)
 		{
 			break;
 		}

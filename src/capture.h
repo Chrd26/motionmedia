@@ -11,7 +11,7 @@ private:
 	VideoPlayer videoplayer;
 	Detector detector;
 	float alpha, beta;
-	bool isIncreasing;
+	bool noDetection;
 	
 public:
 	Capture(int deviceID, int apiID, std::string pathToVideo, std::string pathToBackground);
